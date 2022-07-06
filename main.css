@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* body {
+    position: absolute;
+} */
+
+section {
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 75px;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+}
+
+.navList__item {
+    display: inline-block;
+    margin-left: 40px;
+    font-weight: 500;
+    color: #333;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.nav__item:hover {
+    color: rgb(180, 177, 177);
+
+}
+
+/* body */
+
+.content {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 22px 0 0 0;
+}
+
+.content__textBox {
+    /* position: relative; */
+    /* max-width: 600px; */
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    padding: 0 130px 0 100px;
+}
+
+.content__textBox__title {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 6rem;
+    color: #333;
+    /* display: inline-block; */
+}
+
+.content__textBox__brandName {
+    font-weight: 900;
+    color: #017143;
+}
+
+.content__textBox__button {
+    text-decoration: none;    
+    color: white;
+    border-radius: 2rem;
+    background-color:#017143 ;
+    display: inline-block;
+    margin-top:20px;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.content__textBox__button:hover {
+    color: rgb(180, 177, 177);
+    transform: translateY(-5px);
+}
+
+.content__imageBox {
+    
+}
+
+.content__imageBox__starbucks {
+    max-width: 390px;
+    height: 435px;
+    /* max-height: 400px; */
+    padding: 0 100px 0 0;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.socialMediaContact {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.socialMediaContact__icon {
+    padding: 10px 0 10px 0;
+    margin: 15px 0;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.socialMediaContact__icon__img {
+    width: 20px;
+}
+
+.facebook {
+    width: 15px;
+}
+
+/* footer */
+
+.thumb {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.thumb__atb {
+    padding: 0 20px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb__atb:hover {
+    transform: translateY(-15px);
+}
+
+.thumb__img {
+    /* display: inline-block; */
+    width: 40px;
+    
+}
+
+.circle__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    background-size: cover;
+    clip-path: circle(600px at right 800px);
+}
